@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="OIP.jpeg" type="image/png">
+    <title>My Portfolio ~ Omkar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+    <link id="theme-style" rel="stylesheet" href="dark.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+
+</head>
+<body>
+    <h1 class="counter">0</h1>
+    <div class="overlay">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <nav id="desktop-nav" class="desktop-nav">
+        <div class="logo">Omkar Abhishek</div>
+        <div>
+            <ul class="nav-links">
+                <li class="a1"><a  href="#about">About</a></li>
+                <li class="a1"><a href="#experience">Experiences</a></li>
+                <li class="a1"><a href="#projects">Projects</a></li>
+                <li class="a1"><a  href="#contact">Contact</a></li>
+                <li class="a1"><img id="theme-toggle" src="sun.png" alt="" style="width: 45px; padding-right: 0px;" onclick="toggleTheme()"></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Omkar Abhishek</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experiences</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                <li><img id="theme-toggle" src="sun.png" alt="change theme" style="width: 45px; padding-right: 0px;" onclick="toggleTheme()"></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+                <img src="me.jpg" alt="Omkar profile pic">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Omkar Abhishek</h1>
+            <p class="section__text__p2">Software Engineer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('Profile.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img id="linkedin" src="linkedin_light.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/rahul-mallik-raool/'">
+                <img id="github" src="github_light.png" alt="My GitHub profile" class="icon" onclick="location.href='https://github.com/rahul-mallik'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+                <!--TO CHANGE THE PROFILE PICTURE-->
+            <div class="section__pic-container">
+                <img src="me.jpg" alt="profile pic" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img id="experienceimg" src="experience_light.png" alt="exp icom" class="icon exp">
+                        <h3>Experience</h3>
+                        <p>2+ months <br> Frontend Development</p>
+                        <p>2+ years<br> Basic programming</p>
+                    </div>
+                    <div class="details-container">
+                        <img id="education" src="education_light.png" alt="exp icon" class="icon exp">
+                        <h3>Education</h3>
+                        <p>High Schooling(10 +2) Science CHSE </p>
+                        <p>B. Tech. Computer Science Engineering </p>
+                    </div>
+                </div>
+                    <div class="text-container" style="text-align:center ;">
+                        <p>🎓 Studying at Institute of Technical Education and Research (ITER), SOA University <br>
+                            👨‍🎓 Pursuing B.Tech in Computer Science Engineering <br>
+                            🎓 Expected to graduate in 2026 <br>
+                            
+                            I am an enthusiastic computer science student. My journey at ITER, SOA University has equipped me with a strong foundation in technology and a keen interest in securing digital landscapes. I am driven by the thrill of creating functional and dynamic web applications, and I aspire to contribute my skills to the ever-evolving world of technology.</p>
+                </div>
+            </div>
+        </div>
+        <a  href="#experience"><img id="arrow" src="arrow_light.png" alt="arrow" class="icon arrow" ></a>
+    </section>
+
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img id="check" src="checkmark_light.png" alt="exp icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img id="check1" src="checkmark_light.png" alt="exp icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        
+                        <article>
+                            <img id="check2" src="checkmark_light.png" alt="exp icon" class="icon">
+                            <div>
+                                <h3>JAVA SCRIPT</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Programing Languages</h2>
+                    <div class="article-container">
+                        <article>
+                            <img id="check3" src="checkmark_light.png" alt="exp icon" class="icon">
+                            <div>
+                                <h3>JAVA</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img id="check4" src="checkmark_light.png" alt="exp icon" class="icon">
+                            <div>
+                                <h3>PYTHON</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        
+                        <article>
+                            <img id="check5" src="checkmark_light.png" alt="exp icon" class="icon">
+                            <div>
+                                <h3>C/C++</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img id="check6" src="checkmark_light.png" alt="exp icon" class="icon">
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a  href="#projects"><img id="arrow1" src="arrow_light.png" alt="arrow" class="icon arrow" ></a>
+    </section>
+
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <p class="special">Currently I'm working on my projects,<br>So I'll be uploading them as soon as they are completed. <br> Thank You ;)
+        </p>
+        <a href="#contact"><img id="arrow2" src="arrow_light.png" alt="arrow" class="icon arrow" ></a>
+
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img id="mail" src="email_light.png" alt="Email icon" class="icon contact email em">
+                <p><a href="mailto:omkarabhishek7@gmail.com">omkarabhishek7@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img id="linkedin1" src="linkedin_light.png" alt="Linkedin icon" class="icon contact">
+                <p><a href="https://www.linkedin.com/in/omkar-abhishek-047b31246">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experiences</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 omkar, om. All Rights Reversed</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
